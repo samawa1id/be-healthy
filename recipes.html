@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        /* General Styles */
+        body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.webp') no-repeat center center/cover;
+          color: #333;
+          margin: 0;
+          padding: 0;
+          line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+          font-weight: 600;
+          margin-bottom: 1rem;
+          text-align: center;
+          color: white;
+        }
+
+        /* Header */
+        header {
+          background-color: #28a745;
+          color: white;
+          padding: 1rem 0;
+          text-align: center;
+        }
+
+        nav {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0.5rem 0;
+        }
+
+        nav a {
+          color: white;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+          background-color: #218838;
+        }
+
+        /* Main Content */
+        .recipe-container {
+          max-width: 960px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-container h2 {
+          text-align: left;
+          color: #28a745;
+        }
+
+        .recipe-container h1 {
+          text-align: center;
+        }
+
+
+        .container a {
+          color: #28a745;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+        }
+
+        .container a:hover {
+          background-color: #e0e0e0;
+        }
+
+        .container iframe {
+          width: 100%;
+          height: 400px;
+          border: none;
+          margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+          background-color: #28a745;
+          color: white;
+          text-align: center;
+          padding: 1rem 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+          }
+
+          nav a {
+            margin-bottom: 1rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <div class="recipe-container">
+        <h2>Breakfast:</h2>
+        <ul>
+            <li>
+                Overnight Oats: Combine rolled oats, milk (dairy or plant-based), chia seeds, and your favorite fruits and nuts. 
+            </li>
+            <li>
+                Greek Yogurt with Berries and Granola: A quick and protein-packed breakfast.
+            </li>
+            <li>
+                Avocado Toast: Whole-wheat toast topped with mashed avocado, a sprinkle of salt and pepper, and a squeeze of lemon juice.
+            </li>
+        </ul>
+        <h2>Dinner:</h2>
+        <ul>
+            <li>
+                Salmon with Roasted Vegetables: Salmon is a great source of omega-3 fatty acids. Serve with colorful roasted veggies for a balanced meal. 
+            </li>
+            <li>
+                Chicken Stir-Fry: A quick and easy dinner with plenty of vegetables
+            </li>
+            <li>
+                Lentil Curry: A vegetarian protein-rich meal that's packed with flavor
+            </li>
+        </ul>
+        <h2>Snacks:</h2>
+        <ul>
+            <li>
+                Fruit and Nut Mix: A healthy combination of carbohydrates, fiber, and protein.  
+            </li>
+            <li>
+                Hummus with Veggies: Hummus is a great source of protein and fiber. 
+            </li>
+            <li>
+                Hard-Boiled Eggs: A simple and protein-rich snack.
+            </li>
+        </ul>
+        
+</body>
+</html>

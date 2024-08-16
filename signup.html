@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Healthy - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up for Be Healthy</h2>
+        <form id="signup-form" onsubmit="return validateForm()" action = "user-info.html">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <span id="password-error" style="color: red;"></span>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const passwordError = document.getElementById('password-error');
+
+            // Clear any previous error messages
+            passwordError.textContent = '';
+
+            // Check if the password length is at least 6 characters
+            if (password.length < 6) {
+                passwordError.textContent = 'Password must be at least 6 characters long.';
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>

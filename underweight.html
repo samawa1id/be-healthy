@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Healthy - Overweight</title>
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.webp') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            position: relative
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>You may be underweight</h2>
+        <p>Here are some tips to help you get fit:</p>
+        <ul>
+            <li>Start a regular exercise routine.</li>
+            <li>Gain weight gradually by adding healthy calories.</li>
+            <li>Eat smaller meals more often adding healthy snacks between.</li>
+            <li>Stay hydrated and get plenty of sleep.</li>
+        </ul>
+    <div class="button-container">
+          <button onclick=fitness()>Click here for workouts!</button>
+          <button onclick=recipe()>Click here for recipes!</button>
+        </div>
+
+    </div>
+    <script>
+    function fitness(){
+        window.location.href = "fitness.html";
+    }
+
+    function recipe(){
+        window.location.href = "recipes.html";
+    }
+    </script>
+</body>
+</html>
